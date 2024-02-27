@@ -1,0 +1,24 @@
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('Введите номер операции: 1. Сложение 2. Вычитание 3. Умножение\n', (answer) => {
+  switch (answer) {
+    case '1':
+      console.log('Сложение');
+      break;
+    case '2':
+      console.log('Вычитание');
+      break;
+    case '3':
+      console.log('Умножение');
+      break;
+    default:
+      console.log('Операция неопределена');
+  }
+
+  rl.close();
+});
