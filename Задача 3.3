@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] array = { 1, 2, 3, 4, 5 };
+
+        int sum = 0;
+        foreach (int num in array)
+        {
+            sum += num;
+        }
+
+        double average = (double)sum / array.Length;
+
+        Console.WriteLine($"Сумма элементов массива: {sum}");
+        Console.WriteLine($"Среднее арифметическое значение элементов массива: {average}");
+
+        Console.ReadLine();
+    }
+}
