@@ -1,0 +1,25 @@
+using System;
+
+namespace BankDepositCalculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите сумму вклада:");
+            decimal initialAmount = Convert.ToDecimal(Console.ReadLine());
+
+            Console.WriteLine("Введите количество месяцев:");
+            int months = Convert.ToInt32(Console.ReadLine());
+
+            decimal totalAmount = initialAmount;
+
+            for (int i = 0; i < months; i++)
+            {
+                totalAmount += totalAmount * 0.07m;
+            }
+
+            Console.WriteLine($"После {months} месяцев сумма вклада составит: {totalAmount}");
+        }
+    }
+}
