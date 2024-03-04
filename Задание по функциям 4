@@ -1,0 +1,7 @@
+def max_value(arr):
+    return max(arr)
+
+# Пример использования
+numbers = [5, 10, 3, 8, 15]
+result = max_value(numbers)
+print(result)  # Выведет: 15
